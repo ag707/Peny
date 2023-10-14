@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		420489707474D1E65BD00B1C /* Pods_Peny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E06A086705A273FAE140E0B7 /* Pods_Peny.framework */; };
 		7C1454E82AD5E3BE00B6E605 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1454E72AD5E3BE00B6E605 /* AppDelegate.swift */; };
 		7C1454EA2AD5E3BE00B6E605 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1454E92AD5E3BE00B6E605 /* SceneDelegate.swift */; };
 		7C1454EC2AD5E3BE00B6E605 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1454EB2AD5E3BE00B6E605 /* ViewController.swift */; };
 		7C1454F12AD5E3BF00B6E605 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1454F02AD5E3BF00B6E605 /* Assets.xcassets */; };
 		7C1454F42AD5E3BF00B6E605 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C1454F22AD5E3BF00B6E605 /* LaunchScreen.storyboard */; };
+		7C1455332AD826F500B6E605 /* PetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455322AD826F500B6E605 /* PetButton.swift */; };
+		7C1455352AD837FB00B6E605 /* PetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455342AD837FB00B6E605 /* PetTextField.swift */; };
+		7C1455382AD92E6800B6E605 /* PetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455372AD92E6800B6E605 /* PetLabel.swift */; };
+		7C14553A2AD9354700B6E605 /* PetImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455392AD9354600B6E605 /* PetImageView.swift */; };
+		7C14553C2AD93A5A00B6E605 /* PetLoginButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C14553B2AD93A5A00B6E605 /* PetLoginButtons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		656ADF8D29A503ABEDB1C9B7 /* Pods-Peny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peny.debug.xcconfig"; path = "Target Support Files/Pods-Peny/Pods-Peny.debug.xcconfig"; sourceTree = "<group>"; };
 		7C1454E42AD5E3BE00B6E605 /* Peny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1454E72AD5E3BE00B6E605 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C1454E92AD5E3BE00B6E605 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +29,13 @@
 		7C1454F02AD5E3BF00B6E605 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C1454F32AD5E3BF00B6E605 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C1454F52AD5E3BF00B6E605 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1455322AD826F500B6E605 /* PetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetButton.swift; sourceTree = "<group>"; };
+		7C1455342AD837FB00B6E605 /* PetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetTextField.swift; sourceTree = "<group>"; };
+		7C1455372AD92E6800B6E605 /* PetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLabel.swift; sourceTree = "<group>"; };
+		7C1455392AD9354600B6E605 /* PetImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetImageView.swift; sourceTree = "<group>"; };
+		7C14553B2AD93A5A00B6E605 /* PetLoginButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLoginButtons.swift; sourceTree = "<group>"; };
+		E06A086705A273FAE140E0B7 /* Pods_Peny.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Peny.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A798A8E9CE798D5D30E424 /* Pods-Peny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Peny.release.xcconfig"; path = "Target Support Files/Pods-Peny/Pods-Peny.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				420489707474D1E65BD00B1C /* Pods_Peny.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3452C5CEFB2DB77B3E322505 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				656ADF8D29A503ABEDB1C9B7 /* Pods-Peny.debug.xcconfig */,
+				E4A798A8E9CE798D5D30E424 /* Pods-Peny.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3F9954797FE98D31C96B88EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E06A086705A273FAE140E0B7 /* Pods_Peny.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C1454DB2AD5E3BE00B6E605 = {
 			isa = PBXGroup;
 			children = (
 				7C1454E62AD5E3BE00B6E605 /* Peny */,
 				7C1454E52AD5E3BE00B6E605 /* Products */,
+				3452C5CEFB2DB77B3E322505 /* Pods */,
+				3F9954797FE98D31C96B88EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +88,43 @@
 		7C1454E62AD5E3BE00B6E605 /* Peny */ = {
 			isa = PBXGroup;
 			children = (
+				7C1455362AD83CD600B6E605 /* Resources */,
+				7C1455312AD825F300B6E605 /* Custom Views */,
+				7C1455302AD825E200B6E605 /* Screens */,
 				7C1454E72AD5E3BE00B6E605 /* AppDelegate.swift */,
 				7C1454E92AD5E3BE00B6E605 /* SceneDelegate.swift */,
-				7C1454EB2AD5E3BE00B6E605 /* ViewController.swift */,
 				7C1454F02AD5E3BF00B6E605 /* Assets.xcassets */,
 				7C1454F22AD5E3BF00B6E605 /* LaunchScreen.storyboard */,
 				7C1454F52AD5E3BF00B6E605 /* Info.plist */,
 			);
 			path = Peny;
+			sourceTree = "<group>";
+		};
+		7C1455302AD825E200B6E605 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7C1454EB2AD5E3BE00B6E605 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7C1455312AD825F300B6E605 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C1455322AD826F500B6E605 /* PetButton.swift */,
+				7C1455342AD837FB00B6E605 /* PetTextField.swift */,
+				7C1455372AD92E6800B6E605 /* PetLabel.swift */,
+				7C1455392AD9354600B6E605 /* PetImageView.swift */,
+				7C14553B2AD93A5A00B6E605 /* PetLoginButtons.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		7C1455362AD83CD600B6E605 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C1454F82AD5E3BF00B6E605 /* Build configuration list for PBXNativeTarget "Peny" */;
 			buildPhases = (
+				5E8151F371014E3E8D11EFA5 /* [CP] Check Pods Manifest.lock */,
 				7C1454E02AD5E3BE00B6E605 /* Sources */,
 				7C1454E12AD5E3BE00B6E605 /* Frameworks */,
 				7C1454E22AD5E3BE00B6E605 /* Resources */,
+				48052A52B8B092CA5F570B1B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,14 +194,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		48052A52B8B092CA5F570B1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peny/Pods-Peny-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Peny/Pods-Peny-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Peny/Pods-Peny-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E8151F371014E3E8D11EFA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Peny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C1454E02AD5E3BE00B6E605 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C1455352AD837FB00B6E605 /* PetTextField.swift in Sources */,
+				7C14553C2AD93A5A00B6E605 /* PetLoginButtons.swift in Sources */,
 				7C1454EC2AD5E3BE00B6E605 /* ViewController.swift in Sources */,
+				7C14553A2AD9354700B6E605 /* PetImageView.swift in Sources */,
 				7C1454E82AD5E3BE00B6E605 /* AppDelegate.swift in Sources */,
 				7C1454EA2AD5E3BE00B6E605 /* SceneDelegate.swift in Sources */,
+				7C1455382AD92E6800B6E605 /* PetLabel.swift in Sources */,
+				7C1455332AD826F500B6E605 /* PetButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +382,7 @@
 		};
 		7C1454F92AD5E3BF00B6E605 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 656ADF8D29A503ABEDB1C9B7 /* Pods-Peny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -280,7 +393,6 @@
 				INFOPLIST_FILE = Peny/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -298,6 +410,7 @@
 		};
 		7C1454FA2AD5E3BF00B6E605 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A798A8E9CE798D5D30E424 /* Pods-Peny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,7 +421,6 @@
 				INFOPLIST_FILE = Peny/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
