@@ -29,7 +29,7 @@ class PetLoginButtons: UIButton {
   private func configure() {
 
       setTitleColor(.gray, for: .normal)
-    titleLabel?.font        = UIFont.preferredFont(forTextStyle: .body)
+      titleLabel?.font =  UIFont.systemFont(ofSize: 14)
       translatesAutoresizingMaskIntoConstraints = false
   }
 

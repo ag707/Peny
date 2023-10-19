@@ -14,7 +14,6 @@ class PetLabel: UILabel {
     configure()
   }
 
-
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
@@ -27,13 +26,12 @@ class PetLabel: UILabel {
       configure()
   }
 
+
   private func configure() {
 
-    
     adjustsFontSizeToFitWidth = true
     lineBreakMode = .byWordWrapping
     translatesAutoresizingMaskIntoConstraints = false
     textAlignment = .center
   }
-
 }
