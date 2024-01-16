@@ -27,7 +27,6 @@ class PetButton: UIButton {
 
 
   private func configure() {
-      layer.cornerRadius  = 25
       clipsToBounds = true
       setTitleColor(.white, for: .normal)
       titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
