@@ -10,14 +10,13 @@ import SnapKit
 
 class PetFieldsView: UIView {
 
-  let stackView = UIStackView()
+  private let stackView = UIStackView()
   let entryLabel = PetLabel(text: "Entry", font: UIFont.systemFont(ofSize: 25))
-  let emailTextField = PetTextField(placeholder: "Email")
-  let passwordTextField = PetTextField(placeholder: "Password")
+  let emailTextField = PetLabelTextFieldView()
+  let passwordTextField = PetLabelTextFieldView()
 
   override init(frame: CGRect) {
     super.init(frame: frame)
-
     style()
     layout()
   }
@@ -25,8 +24,6 @@ class PetFieldsView: UIView {
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-
-
 }
 
 extension PetFieldsView {
@@ -39,11 +36,9 @@ extension PetFieldsView {
 
     emailTextField.translatesAutoresizingMaskIntoConstraints = false
     
-
     passwordTextField.translatesAutoresizingMaskIntoConstraints = false
-
-
-   
+    passwordTextField.customTextLabel.text = "Password"
+    
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
     stackView.spacing = 8
@@ -58,11 +53,11 @@ extension PetFieldsView {
     addSubview(stackView)
 
     emailTextField.snp.makeConstraints { make in
-      make.height.equalTo(50)
+      make.height.equalTo(55)
     }
 
     passwordTextField.snp.makeConstraints { make in
-      make.height.equalTo(50)
+      make.height.equalTo(55)
     }
 
     stackView.snp.makeConstraints { make in
