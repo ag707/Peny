@@ -7,46 +7,43 @@
 
 import UIKit
 
-class AppCoordinator: Coordinator {
+class AppCoordinator : Coordinator {
+    var parentCoordinator: Coordinator?
 
-  var parentCoordinator: Coordinator?
-  var children: [Coordinator] = []
-  var navigationController: UINavigationController
+    var children: [Coordinator] = []
 
-//  var navigationController: UINavigationController
-//  var flowCompletionHandler: CoordinatorHandler?
+    var navigationController: UINavigationController
 
-//  private var childCoordinators: [Coordinator] = []
-
-  init(navCon: UINavigationController) {
-    self.navigationController = navCon
-  }
-
-  func start() {
-    let isAuth = false
-
-    if !isAuth {
-      showRegistrationFlow()
-
-    } else {
-      showMainFlow()
-    }
-  }
-
-  private func showRegistrationFlow() {
-
-    let registrationCoordinator = CoordinatorFactory().createRegistrationCoordinator(navigationController: navigationController)
-
-    children.append(registrationCoordinator)
-
-    registrationCoordinator.flowCompletionHandler = { [weak self] in
-      self?.showMainFlow()
+    init(navigationController : UINavigationController) {
+        self.navigationController = navigationController
     }
 
-    registrationCoordinator.start()
-  }
+    func start() {
+        print("AppCoordinator Start")
+        // The first time this coordinator started, is to launch login page.
+       goToAuth()
+    }
 
-  private func showMainFlow() {
-    navigationController.setViewControllers([ViewControllerDemo()], animated: true)
-  }
+    func goToAuth(){
+        // For the first time, the app is going to go to Authentication module
+        let authCoordinator = AuthCoordinator.init(navigationController: navigationController)
+        authCoordinator.parentCoordinator = self
+        children.append(authCoordinator)
+
+        authCoordinator.start()
+    }
+
+    func goToHome(){
+        // Initiate HomeTabBar Coordinator
+//        let coordinator = HomeTabBarCoordinator.init(navigationController: navigationController)
+//        coordinator.parentCoordinator = self
+//        children.append(coordinator)
+//
+//        coordinator.start()
+    }
+
+    deinit {
+        print("AppCoordinator Deinit")
+    }
 }
+

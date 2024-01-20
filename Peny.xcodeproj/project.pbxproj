@@ -23,7 +23,6 @@
 		7C14554A2AE7F31100B6E605 /* PetLabelTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455492AE7F31100B6E605 /* PetLabelTextFieldView.swift */; };
 		7C1455522AE9081800B6E605 /* ViewControllerDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455512AE9081800B6E605 /* ViewControllerDemo.swift */; };
 		7C1455B62AEADB8800B6E605 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455B52AEADB8800B6E605 /* Coordinator.swift */; };
-		7C1455B92AEADCB500B6E605 /* RegistrationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455B82AEADCB500B6E605 /* RegistrationCoordinator.swift */; };
 		7C1455BC2AEADE2200B6E605 /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455BB2AEADE2200B6E605 /* ModuleFactory.swift */; };
 		7C1455BE2AEADFD400B6E605 /* FlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455BD2AEADFD400B6E605 /* FlowController.swift */; };
 		7C1455C12AEAE4D000B6E605 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1455C02AEAE4D000B6E605 /* UserData.swift */; };
@@ -33,8 +32,12 @@
 		7C6C2E552B0FE75700006430 /* HeaderMenCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2E542B0FE75700006430 /* HeaderMenCell.swift */; };
 		7C6C2E572B0FEDD200006430 /* MenButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2E562B0FEDD200006430 /* MenButtonCell.swift */; };
 		7C6C2E642B15139F00006430 /* LoadImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2E632B15139F00006430 /* LoadImageCell.swift */; };
-		7C6C2E6A2B153AD200006430 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2E692B153AD200006430 /* ImageCell.swift */; };
 		7C6C2E9A2B167A6F00006430 /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2E992B167A6F00006430 /* GalleryCell.swift */; };
+		7C6C2ED92B56C92100006430 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2ED82B56C92100006430 /* ImageCell.swift */; };
+		7C6C2EDC2B56CA9E00006430 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2EDB2B56CA9E00006430 /* LoginViewModel.swift */; };
+		7C6C2EDE2B56CABF00006430 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2EDD2B56CABF00006430 /* RegisterViewModel.swift */; };
+		7C6C2EE12B56D4DC00006430 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2EE02B56D4DC00006430 /* AuthCoordinator.swift */; };
+		7C6C2EE32B5876B900006430 /* RestorePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6C2EE22B5876B900006430 /* RestorePasswordViewModel.swift */; };
 		7CD318822AF45986005329D6 /* RegistrationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD318812AF45986005329D6 /* RegistrationCell.swift */; };
 		7CD318862AF6A9C2005329D6 /* PetRegistarationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD318852AF6A9C2005329D6 /* PetRegistarationVC.swift */; };
 		7CD318CA2B0400A3005329D6 /* MainInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD318C92B0400A3005329D6 /* MainInformationCell.swift */; };
@@ -60,7 +63,6 @@
 		7C1455492AE7F31100B6E605 /* PetLabelTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetLabelTextFieldView.swift; sourceTree = "<group>"; };
 		7C1455512AE9081800B6E605 /* ViewControllerDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDemo.swift; sourceTree = "<group>"; };
 		7C1455B52AEADB8800B6E605 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		7C1455B82AEADCB500B6E605 /* RegistrationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCoordinator.swift; sourceTree = "<group>"; };
 		7C1455BB2AEADE2200B6E605 /* ModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		7C1455BD2AEADFD400B6E605 /* FlowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowController.swift; sourceTree = "<group>"; };
 		7C1455C02AEAE4D000B6E605 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -70,8 +72,12 @@
 		7C6C2E542B0FE75700006430 /* HeaderMenCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderMenCell.swift; sourceTree = "<group>"; };
 		7C6C2E562B0FEDD200006430 /* MenButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenButtonCell.swift; sourceTree = "<group>"; };
 		7C6C2E632B15139F00006430 /* LoadImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImageCell.swift; sourceTree = "<group>"; };
-		7C6C2E692B153AD200006430 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		7C6C2E992B167A6F00006430 /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		7C6C2ED82B56C92100006430 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		7C6C2EDB2B56CA9E00006430 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		7C6C2EDD2B56CABF00006430 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		7C6C2EE02B56D4DC00006430 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		7C6C2EE22B5876B900006430 /* RestorePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewModel.swift; sourceTree = "<group>"; };
 		7CD318812AF45986005329D6 /* RegistrationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCell.swift; sourceTree = "<group>"; };
 		7CD318852AF6A9C2005329D6 /* PetRegistarationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetRegistarationVC.swift; sourceTree = "<group>"; };
 		7CD318C92B0400A3005329D6 /* MainInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInformationCell.swift; sourceTree = "<group>"; };
@@ -130,7 +136,8 @@
 		7C1454E62AD5E3BE00B6E605 /* Peny */ = {
 			isa = PBXGroup;
 			children = (
-				7C1455BF2AEAE4B900B6E605 /* Model */,
+				7C6C2EDF2B56D4B200006430 /* Auth */,
+				7C1455BF2AEAE4B900B6E605 /* ViewModel */,
 				7C1455BA2AEADE0C00B6E605 /* Factories */,
 				7C1455B72AEADC9800B6E605 /* Coordinators */,
 				7C1455B42AEADB6D00B6E605 /* Base */,
@@ -189,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				7C1455C42AEB06CE00B6E605 /* AppCoordinator.swift */,
-				7C1455B82AEADCB500B6E605 /* RegistrationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -203,12 +209,15 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
-		7C1455BF2AEAE4B900B6E605 /* Model */ = {
+		7C1455BF2AEAE4B900B6E605 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				7C1455C02AEAE4D000B6E605 /* UserData.swift */,
+				7C6C2EDB2B56CA9E00006430 /* LoginViewModel.swift */,
+				7C6C2EDD2B56CABF00006430 /* RegisterViewModel.swift */,
+				7C6C2EE22B5876B900006430 /* RestorePasswordViewModel.swift */,
 			);
-			path = Model;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7C6C2E502B0FE46300006430 /* TextFields */ = {
@@ -246,6 +255,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		7C6C2EDF2B56D4B200006430 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7C6C2EE02B56D4DC00006430 /* AuthCoordinator.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		7CD318802AF45956005329D6 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,7 +272,7 @@
 				7CD318812AF45986005329D6 /* RegistrationCell.swift */,
 				7C6C2E562B0FEDD200006430 /* MenButtonCell.swift */,
 				7C6C2E632B15139F00006430 /* LoadImageCell.swift */,
-				7C6C2E692B153AD200006430 /* ImageCell.swift */,
+				7C6C2ED82B56C92100006430 /* ImageCell.swift */,
 				7C6C2E992B167A6F00006430 /* GalleryCell.swift */,
 				7C6C2E4E2B0FD0A500006430 /* PetButtonCell.swift */,
 			);
@@ -382,19 +399,21 @@
 				7C6C2E552B0FE75700006430 /* HeaderMenCell.swift in Sources */,
 				7C14553E2ADAE41200B6E605 /* PetFieldsView.swift in Sources */,
 				7C14553C2AD93A5A00B6E605 /* PetLoginButtons.swift in Sources */,
+				7C6C2EE12B56D4DC00006430 /* AuthCoordinator.swift in Sources */,
 				7C6C2E9A2B167A6F00006430 /* GalleryCell.swift in Sources */,
 				7CD318862AF6A9C2005329D6 /* PetRegistarationVC.swift in Sources */,
+				7C6C2EDC2B56CA9E00006430 /* LoginViewModel.swift in Sources */,
 				7C1454EC2AD5E3BE00B6E605 /* PetLoginVC.swift in Sources */,
 				7C14554A2AE7F31100B6E605 /* PetLabelTextFieldView.swift in Sources */,
 				7C1455C32AEAEC2F00B6E605 /* CoordinatorFactory.swift in Sources */,
 				7C1455BE2AEADFD400B6E605 /* FlowController.swift in Sources */,
 				7CD318CA2B0400A3005329D6 /* MainInformationCell.swift in Sources */,
+				7C6C2EDE2B56CABF00006430 /* RegisterViewModel.swift in Sources */,
 				7C6C2E572B0FEDD200006430 /* MenButtonCell.swift in Sources */,
 				7C1455B62AEADB8800B6E605 /* Coordinator.swift in Sources */,
+				7C6C2ED92B56C92100006430 /* ImageCell.swift in Sources */,
 				7CD318822AF45986005329D6 /* RegistrationCell.swift in Sources */,
-				7C6C2E6A2B153AD200006430 /* ImageCell.swift in Sources */,
 				7C1454E82AD5E3BE00B6E605 /* AppDelegate.swift in Sources */,
-				7C1455B92AEADCB500B6E605 /* RegistrationCoordinator.swift in Sources */,
 				7C1455C52AEB06CE00B6E605 /* AppCoordinator.swift in Sources */,
 				7C1455482AE1CF1B00B6E605 /* RegistrationVC.swift in Sources */,
 				7C1455C12AEAE4D000B6E605 /* UserData.swift in Sources */,
@@ -402,6 +421,7 @@
 				7C1455BC2AEADE2200B6E605 /* ModuleFactory.swift in Sources */,
 				7C1455402ADB13A200B6E605 /* PetRestorePasswordVC.swift in Sources */,
 				7CD318CC2B040D2D005329D6 /* HeaderPetCell.swift in Sources */,
+				7C6C2EE32B5876B900006430 /* RestorePasswordViewModel.swift in Sources */,
 				7C6C2E642B15139F00006430 /* LoadImageCell.swift in Sources */,
 				7C1455382AD92E6800B6E605 /* PetLabel.swift in Sources */,
 				7C1455332AD826F500B6E605 /* PetButton.swift in Sources */,

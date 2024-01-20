@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 protocol HeaderPetCellDelegate: AnyObject {
-    func popTapButton()
+  func popTapButton()
 }
 
 class HeaderPetCell: UICollectionViewCell {
@@ -40,8 +40,8 @@ class HeaderPetCell: UICollectionViewCell {
   }
 
   @objc func buttonTapped(_ sender: UIButton) {
-          delegate?.popTapButton()
-      }
+    delegate?.popTapButton()
+  }
 }
 
 extension HeaderPetCell {
@@ -82,22 +82,17 @@ extension HeaderPetCell {
     buttonsStack.addArrangedSubview(menButton)
     buttonsStack.addArrangedSubview(womenButton)
     addSubview(buttonsStack)
-    
 
-    
     blueRectangleImageView.snp.makeConstraints { make in
-      make.top.equalToSuperview()
+      make.top.leading.trailing.equalToSuperview()
       make.height.equalTo(140)
-      make.leading.equalToSuperview()
-      make.trailing.equalToSuperview()
-
     }
 
     avatarImageView.snp.makeConstraints { make in
       make.centerX.equalToSuperview()
       make.height.equalTo(120)
       make.width.equalTo(120)
-      make.bottom.equalTo(blueRectangleImageView.safeAreaLayoutGuide.snp.bottom).offset(30)
+      make.bottom.equalTo(blueRectangleImageView.snp.bottom).offset(30)
     }
 
     navButton.snp.makeConstraints { make in
@@ -109,12 +104,12 @@ extension HeaderPetCell {
 
     labelDownload.snp.makeConstraints { make in
       make.centerX.equalToSuperview()
-      make.top.equalTo(avatarImageView.safeAreaLayoutGuide.snp.bottom).offset(15)
+      make.top.equalTo(avatarImageView.snp.bottom).offset(15)
       make.width.equalTo(102)
     }
 
     buttonsStack.snp.makeConstraints { make in
-      make.top.equalTo(labelDownload.safeAreaLayoutGuide.snp.bottom).offset(20)
+      make.top.equalTo(labelDownload.snp.bottom).offset(20)
       make.leading.equalToSuperview().offset(25)
       make.trailing.equalToSuperview().offset(-25)
       make.height.equalTo(45)

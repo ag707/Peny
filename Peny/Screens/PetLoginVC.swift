@@ -8,8 +8,8 @@
 import SnapKit
 import UIKit
 
-class PetLoginVC: UIViewController, FlowController {
-  var completionHandler: ((String?) -> ())?
+class PetLoginVC: UIViewController {
+  var viewModel : LoginViewModel!
 
   private let illustrationImageView = UIImageView()
   private let petImageView = UIImageView()
@@ -129,11 +129,11 @@ class PetLoginVC: UIViewController, FlowController {
 
 
   @objc private func restorePasswordButton() {
-    completionHandler?("true")
+    viewModel.goToRestorePassword()
   }
 
   @objc private func registrationButton() {
-    completionHandler?("true")
+    viewModel.goToRegister()
   }
 
 

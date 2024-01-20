@@ -8,20 +8,20 @@
 import UIKit
 import SnapKit
 
-class RegistrationVC: UIViewController, FlowController, CollectionViewCellDelegate, HeaderMenCellDelegate {
+class RegistrationVC: UIViewController, CollectionViewCellDelegate, HeaderMenCellDelegate {
 
-  var completionHandler: ((String?) -> ())?
+  var viewModel : RegisterViewModel!
 
   let namesEachFieldData = ["Name", "Email", "Location", "Number", "About you", "Enter password", "Repeat password"]
   var collectionView: UICollectionView!
   let layout = UICollectionViewFlowLayout()
-
 
   override func viewDidLoad() {
     super.viewDidLoad()
     view.backgroundColor = .white
 
     collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+    
     collectionView.dataSource = self
     collectionView.delegate = self
 
@@ -38,20 +38,18 @@ class RegistrationVC: UIViewController, FlowController, CollectionViewCellDelega
     navigationController?.setNavigationBarHidden(true, animated: animated)
   }
 
+
   private func configCollectionView() {
     view.addSubview(collectionView)
 
     collectionView.translatesAutoresizingMaskIntoConstraints = false
     collectionView.showsVerticalScrollIndicator = true
-    collectionView.allowsMultipleSelection = true
+//    collectionView.allowsMultipleSelection = true
     collectionView.alwaysBounceVertical = true
-    collectionView.isScrollEnabled = false
+//    collectionView.isScrollEnabled = false
 
     collectionView.snp.makeConstraints { make in
-      make.top.equalTo(view)
-      make.leading.equalToSuperview()
-      make.trailing.equalToSuperview()
-      make.bottom.equalToSuperview()
+      make.top.leading.trailing.bottom.equalToSuperview()
     }
   }
 
@@ -62,13 +60,12 @@ class RegistrationVC: UIViewController, FlowController, CollectionViewCellDelega
   }
 
   func popTapButton() {
-    _ = PetRestorePasswordVC()
+    _ = PetLoginVC()
     navigationController?.popViewController(animated: true)
   }
 
 
   @objc private func didPressNextButton() {
-    completionHandler?("true")
   }
 }
 
