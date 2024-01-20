@@ -8,15 +8,16 @@
 import UIKit
 import SnapKit
 
-class PetRestorePasswordVC: UIViewController, FlowController {
-  var completionHandler: ((String?) -> ())?
+class PetRestorePasswordVC: UIViewController {
+
+  var viewModel : LoginViewModel!
 
   let remindLable = PetLabel(text: "Remind Password", font: UIFont.systemFont(ofSize: 29))
   let imageLine = UIImageView()
   let emailField = PetLabelTextFieldView()
   let labelInstructions = PetLabelInstructions(text: "Please provide the email address you used to log into Petapp so that we can remind you of your password.")
   let sentButton = PetButton(backgroundColor: .systemBlue, title: "Sent password")
-  let arrowImage = UIImage(named: "arrow")
+  let arrowImage = UIImage(named: "Arrow")
 
 
   override func viewDidLoad() {
@@ -123,7 +124,7 @@ class PetRestorePasswordVC: UIViewController, FlowController {
   }
 
   @objc private func didPressNextButton() {
-    completionHandler?("true")
+//    viewModel.goToLogin()
   }
 }
 
